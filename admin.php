@@ -213,8 +213,8 @@ session_start();
                     echo "</tr>";
                     while($row = $result->fetch_assoc()) {
                         if (isset($_REQUEST['id_usu']) && ($row['id_usu'] == $_REQUEST['id_usu'])){
-                            echo '<form action="modificaradmin.php" method="POST">';
-                            echo '<td><input type="number" name="id_psi" value="'.$row['id_usu'].'"></td>';
+                            echo '<form action="modificaradminusu.php" method="POST">';
+                            echo '<td><input type="number" name="id_usu" value="'.$row['id_usu'].'"></td>';
                             echo '<td><input type="text" name="contraseña" value="'.$row['contraseña'].'"></td>';
                             echo '<td><button type="submit">Save</button></td>';
                             echo '<input type="hidden" name="id_usu" value="' .$row['id_usu']. '">';

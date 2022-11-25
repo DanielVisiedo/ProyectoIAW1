@@ -22,7 +22,7 @@
         
         Header("Location: admin.php");
     }else{
-        $id_psi = $_REQUEST['id_usu'];
+        $id_usu = $_REQUEST['id_usu'];
         $contraseña = $_REQUEST['contraseña'];
         $conn = new mysqli("localhost", "root", "", "proyecto");
         
